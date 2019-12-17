@@ -62,6 +62,9 @@ whenDocumentReady(() => {
                 productCopy.style.left = startLeftCoord + animationStepLeft + 'px';
 
                 if (progressPercent === 100) {
+                    productCopy.style.top = targetTopCoord + 'px';
+                    productCopy.style.left = targetLeftCoord + 'px';
+
                     setTimeout(() => {
                         productCopy.remove()
                     }, 100)
